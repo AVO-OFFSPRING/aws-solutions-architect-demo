@@ -1,6 +1,6 @@
 // CONCEPT: This endpoint represents your API Gateway entry point.
 // You must replace this placeholder string with your real Invoke URL in Phase 5!
-const API_URL = "YOUR_API_GATEWAY_INVOKE_URL_HERE/orders";
+const API_URL = "https://cil6wpo2jk.execute-api.us-east-1.amazonaws.com/prod";
 
 async function submitOrder() {
     // 1. Fetch values from the HTML input fields
