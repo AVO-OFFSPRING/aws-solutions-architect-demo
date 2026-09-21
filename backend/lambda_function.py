@@ -4,8 +4,8 @@ import boto3
 # SAA BEST PRACTICE: Initialize the SDK client OUTSIDE the handler loop.
 # When Lambda runs multiple requests consecutively, AWS reuses the container.
 # Keeping initialization here speeds up subsequent executions (reduces cold start lag).
-dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table('SAA-Demo-Orders')
+dynamodb = boto3.resource('dynamodb') #SDK client for DynamoDB
+table = dynamodb.Table('SAA-Demo-Orders') #DynamoDB table resource
 
 def lambda_handler(event, context):
     """
