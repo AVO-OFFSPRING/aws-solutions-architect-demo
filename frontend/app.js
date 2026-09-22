@@ -9,7 +9,6 @@ async function submitOrder() {
     // 2. Note: Generate a unique ID on the client side 
     // to use as our DynamoDB Partition Key (Primary Key).
     const orderIdentity= "ORD-" + Math.floor(Math.random() * 10000);
-    const orderId = orderId.toString();
     const msgField = document.getElementById('msg');
 
     // Inform user the data is traveling to the cloud
